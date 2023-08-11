@@ -9,7 +9,7 @@ function Buttons(props) {
 
   return (
     <div className = "flex-container">
-      {props.displaySats.map(( sat, id) => { // adding displaySats?.map works to display the rest, but not the main buttons I want.
+      {props.displaySats.map(( sat, id) => {
         return (
           <button onClick={() => props.filterByType(sat)} key={id}>
             {sat} Orbit
